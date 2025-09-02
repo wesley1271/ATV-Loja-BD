@@ -1,7 +1,6 @@
-create database loja;
+create database atividade_normalizacao;
 
-use loja;
-
+use atividade_normalizacao;
 
 create table produto (
 id_produto serial primary key,
@@ -42,35 +41,89 @@ insert into produto (nome_produto) values
 ('Chá'),
 ('Chocolate'),
 ('Biscoito'),
-('Leite');
+('Leite'),
+('Açúcar'),
+('Arroz'),
+('Feijão'),
+('Macarrão'),
+('Farinha'),
+('Manteiga'),
+('Queijo'),
+('Iogurte'),
+('Suco'),
+('Água');
+
 
 insert into fornecedor (nome_fornecedor) values
 ('Fernando'),
 ('Maria'),
 ('Carlos'),
 ('Ana'),
-('Roberto');
+('Roberto'),
+('Paula'),
+('João'),
+('Beatriz'),
+('Marcos'),
+('Juliana'),
+('Sérgio'),
+('Cláudia'),
+('Rafael'),
+('Patrícia'),
+('Luiz');
 
 insert into cidade (nome_cidade) values
 ('São Paulo'),
 ('Rio de Janeiro'),
 ('Belo Horizonte'),
 ('Curitiba'),
-('Porto Alegre');
+('Porto Alegre'),
+('Salvador'),
+('Recife'),
+('Fortaleza'),
+('Manaus'),
+('Belém'),
+('Goiânia'),
+('Brasília'),
+('Campinas'),
+('Florianópolis'),
+('Vitória');
+
 
 insert into encomenda (datas, quantidade) values
 ('2025-08-01', 10),
 ('2025-08-02', 5),
 ('2025-08-03', 15),
 ('2025-08-04', 7),
-('2025-08-05', 20);
+('2025-08-05', 20),
+('2025-08-06', 12),
+('2025-08-07', 8),
+('2025-08-08', 18),
+('2025-08-09', 25),
+('2025-08-10', 9),
+('2025-08-11', 30),
+('2025-08-12', 6),
+('2025-08-13', 22),
+('2025-08-14', 14),
+('2025-08-15', 11);
+
 
 insert into info (id_produtofk, id_fornecedorfk, id_cidadefk, id_encomendafk) values
 (1, 1, 1, 1),
 (2, 2, 2, 2),
 (3, 3, 3, 3),
 (4, 4, 4, 4),
-(5, 5, 5, 5);
+(5, 5, 5, 5),
+(6, 6, 6, 6),
+(7, 7, 7, 7),
+(8, 8, 8, 8),
+(9, 9, 9, 9),
+(10, 10, 10, 10),
+(11, 11, 11, 11),
+(12, 12, 12, 12),
+(13, 13, 13, 13),
+(14, 14, 14, 14),
+(15, 15, 15, 15);
+
 
 
 show tables;
@@ -79,4 +132,7 @@ select * from produto;
 select * from fornecedor;
 select * from encomenda;
 select * from info;
+
+
+
 
