@@ -1,5 +1,6 @@
 Script da atividade de banco de dados, feito até a 3FN, contendo os seguintes dados:
 
+
 **Produto:** chave do produto, nome do produto;  
 
 **Fornecedor:** chave do fornecedor, nome do fornecedor;  
